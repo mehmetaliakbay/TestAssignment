@@ -17,7 +17,7 @@ public class FormsPageTest extends TestBase {
         return TestUtils.getTestData(sheetName);
     }
 
-    @Test(groups = {"e2e"},dataProvider = "getCRMTestData", description = "A Test that searches flights with desired options")
+    @Test(groups = {"e2e"},dataProvider = "getCRMTestData", description = "A Test that fill forms and validate values")
     public void validateCreateNewForms(String formTitle, String reportMail, String description, String welcomeMessage,
                                        String confirmationMessage) throws InterruptedException {
 
